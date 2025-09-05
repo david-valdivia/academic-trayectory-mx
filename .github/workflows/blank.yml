@@ -37,6 +37,8 @@ jobs:
       # Make a File with the current time
       - name: Create a current time file
         run: echo $( date '+%F_%H:%M:%S' )  > time.txt
-      # Commit and push
+      # Config Github
       - name: Commit and Push Changes
+        run: git config --global user.email "dev@dvaldivia.com" && git config --global user.name "david-valdivia"
+      - name: Commit and Push
         run: git add . && git commit -m 'changes' && git push
