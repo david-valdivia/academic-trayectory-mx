@@ -7,7 +7,7 @@ Automated system to generate academic credential visualizations from Mexico's SE
 ## Quick Setup
 
 ### 1. Create New Repository
-- Create new repository (do not fork)
+- Create new repository (do not fork) [HERE](https://github.com/david-valdivia/academic-trayectory-mx/create)
 - Clone locally
 - Copy all files from source project
 
