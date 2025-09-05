@@ -2,6 +2,8 @@
 
 Automated system to generate academic credential visualizations from Mexico's SEP professional certificate database.
 
+![](https://raw.githubusercontent.com/david-valdivia/academic-trayectory-mx/main/outputs/academic_trajectory.svg)
+
 ## Quick Setup
 
 ### 1. Create New Repository
@@ -49,7 +51,7 @@ Edit `.github/workflows/ci.yml`:
 Add to your README.md:
 
 ```markdown
-![Academic Trajectory](https://raw.githubusercontent.com/david-valdivia/REPOSITORY/main/outputs/academic_trajectory.svg)
+![](https://raw.githubusercontent.com/david-valdivia/academic-trayectory-mx/main/outputs/academic_trajectory.svg)
 ```
 
 Replace `USERNAME` and `REPOSITORY` with your GitHub details.
