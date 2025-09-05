@@ -99,13 +99,13 @@ while IFS='|' read -r year title institution cedula; do
 
     # Positions
     if [ $((count % 2)) -eq 0 ]; then
-        x_pos=20
+        x_pos=0
     else
         x_pos=420
     fi
 
     if [ $count -lt 2 ]; then
-        y_pos=50
+        y_pos=0
     else
         y_pos=155
     fi
