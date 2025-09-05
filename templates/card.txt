@@ -1,0 +1,8 @@
+<!-- Card {{CARD_NUMBER}}: {{BADGE_TEXT}} {{YEAR}} -->
+<rect x="{{X_POS}}" y="{{Y_POS}}" width="360" height="90" class="card"/>
+<rect x="{{BADGE_X}}" y="{{BADGE_Y}}" width="120" height="20" class="badge badge-{{BADGE_TYPE}}"/>
+<text x="{{BADGE_TEXT_X}}" y="{{BADGE_TEXT_Y}}" class="badge" text-anchor="middle">{{BADGE_TEXT}}</text>
+<text x="{{YEAR_X}}" y="{{YEAR_Y}}" class="year">{{YEAR}}</text>
+<text x="{{TITLE_X}}" y="{{TITLE_Y}}" class="title">{{TITLE}}</text>
+<text x="{{INSTITUTION_X}}" y="{{INSTITUTION_Y}}" class="institution">{{INSTITUTION}}</text>
+<text x="{{CEDULA_X}}" y="{{CEDULA_Y}}" class="cedula">ID: {{CEDULA_NUMBER}}</text>
