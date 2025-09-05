@@ -51,9 +51,6 @@ svg {
 .badge-master { fill: #3b82f6; }
 </style>
 
-<!-- Header -->
-<text x="400" y="25" class="header" text-anchor="middle">ACADEMIC TRAJECTORY</text>
-
 <!-- Card 1: MASTER 2021 -->
 <rect x="20" y="50" width="360" height="90" class="card"/>
 <rect x="30" y="60" width="120" height="20" class="badge badge-master"/>
