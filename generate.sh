@@ -14,10 +14,11 @@ fi
 # Create directories
 mkdir -p outputs templates
 
-# API Request
 api_response=$(curl -s -X POST https://www.cedulaprofesional.sep.gob.mx/cedula/buscaCedulaJson.action \
-  -H "Content-Type: application/x-www-form-urlencoded; charset=utf-8" \
-  -d "json={\"idCedula\":\"\",\"nombre\":\"$name\",\"paterno\":\"$first_surname\",\"materno\":\"$second_surname\"}")
+ -H "Content-Type: application/x-www-form-urlencoded; charset=utf-8" \
+ -H "Accept: application/json; charset=utf-8" \
+ -d "json={\"idCedula\":\"\",\"nombre\":\"$name\",\"paterno\":\"$first_surname\",\"materno\":\"$second_surname\"}" \
+ | iconv -f latin1 -t utf-8 2>/dev/null || echo "$api_response")
 
 # Verify API response
 if [ -z "$api_response" ] || ! echo "$api_response" | jq . >/dev/null 2>&1; then
@@ -87,6 +88,20 @@ truncate_text() {
     fi
 }
 
+mask_cedula() {
+    local cedula="$1"
+    local length=${#cedula}
+
+    if [ $length -ge 3 ]; then
+        local first="X"
+        local middle="${cedula:1:$((length-2))}"
+        local last="X"
+        echo "${first}${middle}${last}"
+    else
+        echo "$cedula"
+    fi
+}
+
 # Generate cards
 all_cards=""
 count=0
@@ -153,7 +168,7 @@ while IFS='|' read -r year title institution cedula; do
     card="${card//\{\{INSTITUTION\}\}/$institution_truncated}"
     card="${card//\{\{CEDULA_X\}\}/$cedula_x}"
     card="${card//\{\{CEDULA_Y\}\}/$cedula_y}"
-    card="${card//\{\{CEDULA_NUMBER\}\}/$cedula}"
+    card="${card//\{\{CEDULA_NUMBER\}\}/$(mask_cedula "$cedula")}"
 
     all_cards="$all_cards$card"
     count=$((count+1))
