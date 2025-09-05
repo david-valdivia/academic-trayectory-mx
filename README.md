@@ -63,7 +63,6 @@ Replace `USERNAME` and `REPOSITORY` with your GitHub details.
 - Repository secrets configured
 - GitHub Actions enabled
 
----
 ## Data Usage Agreement
 
 This application requires personal information to function properly. By using this software, you consent to provide and allow the use of such information for the application's operation only.
