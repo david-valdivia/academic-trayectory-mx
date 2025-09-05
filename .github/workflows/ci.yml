@@ -32,8 +32,15 @@ jobs:
       # Create a SVG Image
       - name: Generate SVG
         run: ./generate.sh "${{ secrets.NAME }}" "${{ secrets.APAT }}" "${{ secrets.AMAT }}"
-      # Config Github
+      # Commit if is necesary
       - name: Commit and Push Changes
-        run: git config --global user.email "dev@dvaldivia.com" && git config --global user.name "david-valdivia"
-      - name: Commit and Push
-        run: git add . && git commit -m 'Generate SVG' && git push
+        run: |
+           git config --global user.email "dev@dvaldivia.com"
+           git config --global user.name "david-valdivia"
+           git add .
+           if git diff --staged --quiet; then
+             echo "No changes to commit"
+           else
+             git commit -m 'Generate SVG'
+             git push
+           fi
