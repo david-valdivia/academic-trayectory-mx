@@ -97,9 +97,6 @@ svg {
 }
 </style>
 
-<!-- Header -->
-<text x="400" y="25" class="header" text-anchor="middle">ACADEMIC TRAJECTORY</text>
-
 <!-- Card 1: MASTER 2021 -->
 <rect x="5" y="5" width="360" height="90" class="card"/>
 <rect x="15" y="15" width="120" height="20" class="badge badge-master"/>
