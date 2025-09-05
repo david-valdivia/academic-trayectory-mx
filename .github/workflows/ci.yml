@@ -26,6 +26,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+      # Remove Old SVG
+      - name: Remove SVG
+        run: rm ./outputs/academic_trajectory.svg
       # Create a SVG Image
       - name: Generate SVG
         run: ./generate.sh "${{ secrets.NAME }}" "${{ secrets.APAT }}" "${{ secrets.AMAT }}"
@@ -33,4 +36,4 @@ jobs:
       - name: Commit and Push Changes
         run: git config --global user.email "dev@dvaldivia.com" && git config --global user.name "david-valdivia"
       - name: Commit and Push
-        run: git add . && git commit -m 'changes' && git push
+        run: git add . && git commit -m 'Generate SVG' && git push
