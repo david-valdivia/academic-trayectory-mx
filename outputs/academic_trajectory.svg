@@ -102,22 +102,22 @@ svg {
 <rect x="15" y="15" width="120" height="20" class="badge badge-master"/>
 <text x="75" y="29" class="badge" text-anchor="middle">MASTER</text>
 <text x="325" y="29" class="year">2021</text>
-<text x="15" y="50" class="title">MAESTRÍA EN INGENIERÍA ELECTRÍNICA</text>
-<text x="15" y="67" class="institution">INSTITUTO TECNOLÍGICO DE ORIZABA</text>
-<text x="15" y="80" class="cedula">ID: 12570648</text><!-- Card 2: TECHNICAL 2015 -->
+<text x="15" y="50" class="title">MAESTRÍA EN INGENIERÍA ELECTRÓNICA</text>
+<text x="15" y="67" class="institution">INSTITUTO TECNOLÓGICO DE ORIZABA</text>
+<text x="15" y="80" class="cedula">ID: X257064X</text><!-- Card 2: TECHNICAL 2015 -->
 <rect x="380" y="5" width="360" height="90" class="card"/>
 <rect x="390" y="15" width="120" height="20" class="badge badge-technical"/>
 <text x="450" y="29" class="badge" text-anchor="middle">TECHNICAL</text>
 <text x="700" y="29" class="year">2015</text>
-<text x="390" y="50" class="title">TÍCNICO EN INFORMÍTICA</text>
+<text x="390" y="50" class="title">TÉCNICO EN INFORMÁTICA</text>
 <text x="390" y="67" class="institution">C.B.T.I.S. NO. 47</text>
-<text x="390" y="80" class="cedula">ID: 8955950</text><!-- Card 3: BACHELOR 2018 -->
+<text x="390" y="80" class="cedula">ID: X95595X</text><!-- Card 3: BACHELOR 2018 -->
 <rect x="5" y="105" width="360" height="90" class="card"/>
 <rect x="15" y="115" width="120" height="20" class="badge badge-bachelor"/>
 <text x="75" y="129" class="badge" text-anchor="middle">BACHELOR</text>
 <text x="325" y="129" class="year">2018</text>
 <text x="15" y="150" class="title">LICENCIATURA EN INGENIERÍA EN SI...</text>
-<text x="15" y="167" class="institution">INSTITUTO TECNOLÍGICO DE ORIZABA, VER...</text>
-<text x="15" y="180" class="cedula">ID: 11349319</text>
+<text x="15" y="167" class="institution">INSTITUTO TECNOLÓGICO DE ORIZABA, VER...</text>
+<text x="15" y="180" class="cedula">ID: X134931X</text>
 
 </svg>
