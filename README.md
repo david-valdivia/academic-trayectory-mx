@@ -35,7 +35,7 @@ Edit `.github/workflows/ci.yml`:
 ```
 ├── templates/main.txt
 ├── templates/card.txt
-├── genera.sh
+├── generate.sh
 ├── .github/workflows/ci.yml
 └── outputs/ (auto-generated)
 ```
