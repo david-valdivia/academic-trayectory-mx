@@ -48,7 +48,7 @@ svg {
 .header {
   font-size: 16px;
   font-weight: 600;
-  fill: #1f2937;
+  fill: #3b82f6;
 }
 
 .badge {
@@ -71,6 +71,9 @@ svg {
   }
 }
 </style>
+
+<!-- Header -->
+<text x="5" y="25" class="header">ACADEMIC TRAJECTORY</text>
 
 <!-- Card 1: MASTER 2021 -->
 <rect x="5" y="5" width="360" height="90" class="card"/>
