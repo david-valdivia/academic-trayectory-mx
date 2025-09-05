@@ -29,9 +29,6 @@ jobs:
       # Create a SVG Image
       - name: Generate SVG
         run: ./generate.sh "${{ secrets.NAME }}" "${{ secrets.APAT }}" "${{ secrets.AMAT }}"
-      # Make a File with the current time
-      - name: Create a current time file
-        run: echo $( date '+%F_%H:%M:%S' )  > time.txt
       # Config Github
       - name: Commit and Push Changes
         run: git config --global user.email "dev@dvaldivia.com" && git config --global user.name "david-valdivia"
