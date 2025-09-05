@@ -39,4 +39,4 @@ jobs:
         run: echo $( date '+%F_%H:%M:%S' )  > time.txt
       # Commit and push
       - name: Commit and Push Changes
-        run: git add . && git commit - m 'changes' && git push
+        run: git add . && git commit -m 'changes' && git push
