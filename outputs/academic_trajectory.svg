@@ -46,7 +46,7 @@ svg {
 }
 
 .header {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   fill: #3b82f6;
 }
