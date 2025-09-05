@@ -1,0 +1,80 @@
+<svg width="800" height="280" xmlns="http://www.w3.org/2000/svg">
+<style>
+svg {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+.card {
+  fill: white;
+  stroke: #e5e7eb;
+  stroke-width: 1px;
+  rx: 8px;
+}
+
+.year {
+  font-size: 14px;
+  font-weight: 600;
+  fill: #374151;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 500;
+  fill: #1f2937;
+}
+
+.institution {
+  font-size: 10px;
+  fill: #6b7280;
+}
+
+.cedula {
+  font-size: 9px;
+  fill: #9ca3af;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: 600;
+  fill: #1f2937;
+}
+
+.badge {
+  rx: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  fill: white;
+}
+
+.badge-technical { fill: #f59e0b; }
+.badge-bachelor { fill: #10b981; }
+.badge-master { fill: #3b82f6; }
+</style>
+
+<!-- Header -->
+<text x="400" y="25" class="header" text-anchor="middle">ACADEMIC TRAJECTORY</text>
+
+<!-- Card 1: MASTER 2021 -->
+<rect x="20" y="50" width="360" height="90" class="card"/>
+<rect x="30" y="60" width="120" height="20" class="badge badge-master"/>
+<text x="90" y="74" class="badge" text-anchor="middle">MASTER</text>
+<text x="340" y="74" class="year">2021</text>
+<text x="30" y="95" class="title">MAESTRÍA EN INGENIERÍA ELECTRÍNICA</text>
+<text x="30" y="112" class="institution">INSTITUTO TECNOLÍGICO DE ORIZABA</text>
+<text x="30" y="125" class="cedula">ID: 12570648</text><!-- Card 2: TECHNICAL 2015 -->
+<rect x="420" y="50" width="360" height="90" class="card"/>
+<rect x="430" y="60" width="120" height="20" class="badge badge-technical"/>
+<text x="490" y="74" class="badge" text-anchor="middle">TECHNICAL</text>
+<text x="740" y="74" class="year">2015</text>
+<text x="430" y="95" class="title">TÍCNICO EN INFORMÍTICA</text>
+<text x="430" y="112" class="institution">C.B.T.I.S. NO. 47</text>
+<text x="430" y="125" class="cedula">ID: 8955950</text><!-- Card 3: BACHELOR 2018 -->
+<rect x="20" y="155" width="360" height="90" class="card"/>
+<rect x="30" y="165" width="120" height="20" class="badge badge-bachelor"/>
+<text x="90" y="179" class="badge" text-anchor="middle">BACHELOR</text>
+<text x="340" y="179" class="year">2018</text>
+<text x="30" y="200" class="title">LICENCIATURA EN INGENIERÍA EN SI...</text>
+<text x="30" y="217" class="institution">INSTITUTO TECNOLÍGICO DE ORIZABA, VER...</text>
+<text x="30" y="230" class="cedula">ID: 11349319</text>
+
+</svg>

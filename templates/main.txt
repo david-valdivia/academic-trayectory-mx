@@ -1,0 +1,59 @@
+<svg width="800" height="280" xmlns="http://www.w3.org/2000/svg">
+<style>
+svg {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+.card {
+  fill: white;
+  stroke: #e5e7eb;
+  stroke-width: 1px;
+  rx: 8px;
+}
+
+.year {
+  font-size: 14px;
+  font-weight: 600;
+  fill: #374151;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 500;
+  fill: #1f2937;
+}
+
+.institution {
+  font-size: 10px;
+  fill: #6b7280;
+}
+
+.cedula {
+  font-size: 9px;
+  fill: #9ca3af;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: 600;
+  fill: #1f2937;
+}
+
+.badge {
+  rx: 4px;
+  font-size: 10px;
+  font-weight: 500;
+  fill: white;
+}
+
+.badge-technical { fill: #f59e0b; }
+.badge-bachelor { fill: #10b981; }
+.badge-master { fill: #3b82f6; }
+</style>
+
+<!-- Header -->
+<text x="400" y="25" class="header" text-anchor="middle">ACADEMIC TRAJECTORY</text>
+
+{{CARDS}}
+
+</svg>
