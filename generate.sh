@@ -88,6 +88,7 @@ truncate_text() {
     fi
 }
 
+# Function to mask cedula digits
 mask_cedula() {
     local cedula="$1"
     local length=${#cedula}
