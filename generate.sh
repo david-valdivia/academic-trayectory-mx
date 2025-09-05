@@ -120,9 +120,9 @@ while IFS='|' read -r year title institution cedula; do
     fi
 
     if [ $count -lt 2 ]; then
-        y_pos=5
+        y_pos=35
     else
-        y_pos=105
+        y_pos=135
     fi
 
     # Truncate texts and fix accents
