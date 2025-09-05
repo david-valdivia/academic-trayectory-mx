@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@v4
       # Create a SVG Image
       - name: Generate SVG
-        run: ./genera.sh "${{ secrets.NAME }}" "${{ secrets.APAT }}" "${{ secrets.AMAT }}"
+        run: ./generate.sh "${{ secrets.NAME }}" "${{ secrets.APAT }}" "${{ secrets.AMAT }}"
       # Make a File with the current time
       - name: Create a current time file
         run: echo $( date '+%F_%H:%M:%S' )  > time.txt
