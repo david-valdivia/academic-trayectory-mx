@@ -2,7 +2,6 @@
 <style>
 svg {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
-  margin-left: 0;
 }
 
 .card {
@@ -10,34 +9,50 @@ svg {
   stroke: #e5e7eb;
   stroke-width: 1px;
   rx: 8px;
+  animation: slideIn 0.8s ease-out forwards;
+  opacity: 0;
 }
+
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
 
 .year {
   font-size: 14px;
   font-weight: 600;
   fill: #374151;
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
 }
 
 .title {
   font-size: 12px;
   font-weight: 500;
   fill: #1f2937;
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
 }
 
 .institution {
   font-size: 10px;
   fill: #6b7280;
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
 }
 
 .cedula {
   font-size: 9px;
   fill: #9ca3af;
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
 }
 
 .header {
   font-size: 16px;
   font-weight: 600;
   fill: #1f2937;
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
 }
 
 .badge {
@@ -45,12 +60,45 @@ svg {
   font-size: 10px;
   font-weight: 500;
   fill: white;
+  animation: scaleIn 0.5s ease-out forwards;
+  opacity: 0;
+  transform-origin: center;
 }
 
 .badge-technical { fill: #f59e0b; }
 .badge-bachelor { fill: #10b981; }
 .badge-master { fill: #3b82f6; }
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 </style>
+
+<!-- Header -->
+<text x="400" y="25" class="header" text-anchor="middle">ACADEMIC TRAJECTORY</text>
 
 <!-- Card 1: MASTER 2021 -->
 <rect x="5" y="5" width="360" height="90" class="card"/>
