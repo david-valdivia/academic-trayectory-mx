@@ -34,3 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      # Make a File with the current time
+      - name: Create a current time file
+        run: echo $( date '+%F_%H:%M:%S' )  > time.txt
+      # Commit and push
+      - name: Commit and Push Changes
+        run: git add . && git commit - m 'changes' && git push
